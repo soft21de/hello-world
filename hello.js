@@ -14,16 +14,17 @@ var label = tabris.create("TextView", {
 }).appendTo(page);
 
 var toggleButton = tabris.create("ToggleButton", {
+  layoutData: {left: 10, top: 10},
   text: "Ein",
-  layoutData: {centerX: 0, top: [label, 50]}
+  selection: true
 }).appendTo(page);
 
 button.on("select", function() {
   label.set("text", "Button gedrückt");
 });
 
-toggleButton.on("select", function() {
-  label.set("text, "Toggle gedrückt");
+toggleButton.on("change:selection", function(button, selection) {
+  this.set("text, selection ? "Ein" : "Aus");
 });
 
 page.open();
