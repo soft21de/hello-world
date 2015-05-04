@@ -1,10 +1,10 @@
 var page = tabris.create("Page", {
-  title: "Hello, World!",
+  title: "Hi!",
   topLevel: true
 });
 
 var button = tabris.create("Button", {
-  text: "Native Widgets",
+  text: "Klick mich:-)",
   layoutData: {centerX: 0, top: 100}
 }).appendTo(page);
 
@@ -13,8 +13,17 @@ var label = tabris.create("TextView", {
   layoutData: {centerX: 0, top: [button, 50]}
 }).appendTo(page);
 
+var toggleButton = tabris.create("ToggleButton", {
+  text: "Ein",
+  layoutData: {centerX: 0, top: [label, 50]}
+}).appendTo(page);
+
 button.on("select", function() {
-  label.set("text", "Totally Rock!");
+  label.set("text", "Button gedrückt");
+});
+
+toggleButton.on("select", function() {
+  label.set("text, "Toggle gedrückt");
 });
 
 page.open();
