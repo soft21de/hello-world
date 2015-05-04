@@ -4,7 +4,7 @@
 3 info using node@v0.12.2
 4 error install Couldn't read dependencies
 5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token 'v' at 7:4
+5 verbose stack Unexpected token 'v' at 8:4
 5 verbose stack   "version": "1.0.0",
 5 verbose stack    ^
 5 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:406:25)
@@ -21,7 +21,7 @@
 11 error file /Users/carmen/GitHub/hello-world/package.json
 12 error code EJSONPARSE
 13 error Failed to parse json
-13 error Unexpected token 'v' at 7:4
+13 error Unexpected token 'v' at 8:4
 13 error   "version": "1.0.0",
 13 error    ^
 14 error File: /Users/carmen/GitHub/hello-world/package.json
