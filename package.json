@@ -1,0 +1,8 @@
+{
+  "name": "hello-world",
+  "description": "Hello, World!",
+  "main": "hello.js",
+  "dependencies": {
+    "tabris": "1.0.0"
+  }
+}
